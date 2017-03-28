@@ -1,6 +1,6 @@
 import React from 'react'
-import {renderToString} from 'react-dom/server';
+import {render} from 'react-dom';
 import App from './App'
 
-const appHtml = renderToString(<App/>);
+const appHtml = render((<App/>),document.getElementById('app'));
 console.log(appHtml);
